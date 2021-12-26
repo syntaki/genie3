@@ -5395,7 +5395,7 @@ namespace GenieClient
             {
                 if (InvokeRequired == true)
                 {
-                    var parameters = new[] { iTime };
+                    int parameters = iTime;
                     Invoke(new SetRoundtimeDelegate(SetRoundTime), parameters);
                 }
                 else
